@@ -2,15 +2,26 @@ import React from "react";
 import { Link } from "gatsby";
 
 const Navbar = () => {
-  return (
-    <nav>
-      <div>zipline</div>
+  const linkStyle =
+    "ml-10 text-lg text-gray-500 hover:text-black transition-ll duration-300 ease-in-out";
 
-      <div>
-        <Link to={"solutions"}>Solutions</Link>
-        <Link to={"solutions"}>How It Works</Link>
-        <Link to={"solutions"}>Company</Link>
-        <Link to={"solutions"}>Career</Link>
+  return (
+    <nav className="container flex justify-between max-w-screen-lg py-3 font-sans px-10">
+      <div className="font-bold text-3xl">zipline</div>
+
+      <div className="pt-2">
+        <Link className={linkStyle} to={"solutions"}>
+          Solutions
+        </Link>
+        <Link className={linkStyle} to={"how-it-works"}>
+          How It Works
+        </Link>
+        <Link className={linkStyle} to={"company"}>
+          Company
+        </Link>
+        <Link className={linkStyle} to={"careers"}>
+          Careers
+        </Link>
       </div>
     </nav>
   );
