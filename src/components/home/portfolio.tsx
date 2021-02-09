@@ -1,8 +1,18 @@
 import React from "react";
+import { graphql } from "gatsby";
+import PortfolioItem from "./portfolioItem";
+import { portfolioItemsCopy } from "../../copy/copy";
 
-const Portfolio = () => {
+interface PortfolioComponentProps {
+  images: any[];
+}
+
+const Portfolio = (props: PortfolioComponentProps) => {
+  const { images } = props;
+  let reverse = true;
+
   return (
-    <div className="container max-w-screen-lg py-20 px-10 font-sans">
+    <section className="container max-w-screen-lg py-20 px-10 font-sans">
       <h1 className="font-bold mb-0 max-w-2xl text-6xl leading-snug">
         How We're Different
       </h1>
@@ -20,7 +30,23 @@ const Portfolio = () => {
         access to on-demand delivery, globally, and for the deliveries that
         matter most.
       </p>
-    </div>
+
+      {portfolioItemsCopy.map((portfolioItemCopy, idx) => {
+        const { title, description, caption } = portfolioItemCopy;
+        reverse = !reverse;
+
+        return (
+          <PortfolioItem
+            reverse={reverse}
+            title={title}
+            description={description}
+            caption={caption}
+            key={idx}
+            image={images[idx]}
+          />
+        );
+      })}
+    </section>
   );
 };
 
