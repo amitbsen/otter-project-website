@@ -10,17 +10,14 @@ const Navbar = () => {
       <div className="font-bold text-3xl">zipline</div>
 
       <div className="pt-2">
-        <Link className={linkStyle} to={"solutions"}>
-          Solutions
+        <Link className={linkStyle} to={"initiatives"}>
+          Initiatives
         </Link>
-        <Link className={linkStyle} to={"how-it-works"}>
-          How It Works
+        <Link className={linkStyle} to={"about"}>
+          About
         </Link>
-        <Link className={linkStyle} to={"company"}>
-          Company
-        </Link>
-        <Link className={linkStyle} to={"careers"}>
-          Careers
+        <Link className={linkStyle} to={"contact"}>
+          Contact
         </Link>
       </div>
     </nav>
