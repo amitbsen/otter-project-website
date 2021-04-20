@@ -10,13 +10,13 @@ const Navbar = () => {
       <div className="font-bold text-3xl">zipline</div>
 
       <div className="pt-2">
-        <Link className={linkStyle} to={"initiatives"}>
+        <Link className={linkStyle} to={"/initiatives"}>
           Initiatives
         </Link>
-        <Link className={linkStyle} to={"about"}>
+        <Link className={linkStyle} to={"/about"}>
           About
         </Link>
-        <Link className={linkStyle} to={"contact"}>
+        <Link className={linkStyle} to={"/contact"}>
           Contact
         </Link>
       </div>
