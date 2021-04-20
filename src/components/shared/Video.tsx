@@ -7,11 +7,7 @@ interface VideoComponentProps {
 const Video = (props: VideoComponentProps) => {
   const { sourceUri } = props;
 
-  return (
-    <div>
-      <video autoPlay loop className="ml-auto rounded-lg" src={sourceUri} />
-    </div>
-  );
+  return <video autoPlay loop className="ml-auto rounded-lg" src={sourceUri} />;
 };
 
 export default Video;
