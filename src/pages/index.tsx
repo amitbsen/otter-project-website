@@ -19,6 +19,7 @@ const HomePage = (props: HomePageComponentProps) => {
   return (
     <Layout>
       <Jumbotron
+        fullWidth={false}
         mediaType={Media.video}
         sourceUri={"https://flyzipline.com/assets/video/hero.mp4"}
         subtitle={
