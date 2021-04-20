@@ -11,10 +11,10 @@ const Jumbotron = () => {
       ></video>
 
       <div>
-        <h1 className="font-bold mb-1 max-w-2xl text-6xl leading-snug">
+        <h1 className="font-bold mb-1 max-w-2xl text-6xl leading-snug tracking-normal text-green-900">
           Vital, On-Demand Delivery for the World
         </h1>
-        <h2 className="font-normal text-gray-400 mt-0 max-w-2xl leading-normal text-4xl">
+        <h2 className="font-normal mt-2 max-w-2xl leading-normal text-4xl tracking-normal text-gray-500 ">
           Enabled by the fastest and most experienced drone delivery service
         </h2>
       </div>

@@ -3,7 +3,7 @@ import Img from "gatsby-image";
 
 interface PortfolioItemComponentProps {
   reverse: boolean;
-  title: string;
+  title: string | JSX.Element;
   description: React.ReactNode | string;
   caption: React.ReactNode | null;
   image: any;
@@ -19,8 +19,10 @@ const PortfolioItem = (props: PortfolioItemComponentProps) => {
       }`}
     >
       <div className="w-2/4">
-        <h3 className="text-4xl mb-3 leading-normal">{title}</h3>
-        <p className="text-lg leading-relaxed">{description}</p>
+        <h3 className="text-4xl mb-3 leading-normal tracking-normal">
+          {title}
+        </h3>
+        <p className="text-lg leading-relaxed tracking-normal">{description}</p>
       </div>
       <div className="w-2/4">
         <Img
@@ -31,7 +33,9 @@ const PortfolioItem = (props: PortfolioItemComponentProps) => {
         />
         <div className="border-4 mt-4 border-t-0 border-r-0 border-b-0 px-4">
           {caption !== null ? (
-            <p className="text-lg text-gray-400 mb-0 ">{caption}</p>
+            <p className="text-lg text-gray-400 mb-0 tracking-normal">
+              {caption}
+            </p>
           ) : null}
         </div>
       </div>
