@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "AvenirLTPro";
+  src: url("../fonts/avenir-lt-pro-light.woff2") format("woff2");
+  font-weight: "normal";
+  font-style: "normal";
+}
+@font-face {
+  font-family: "AvenirLTPro";
+  src: url("../fonts/avenir-lt-pro-medium.woff2") format("woff2");
+  font-weight: "bold";
+  font-style: "normal";
+}

@@ -5,7 +5,14 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    fontFamily: {
+      sans: ["AvenirLTPro", "Helvetica", "Arial", "sans-serif"],
+    },
+    extend: {
+      colors: {
+        "green-blue": "#364f53",
+      },
+    },
   },
   variants: {
     extend: {},
