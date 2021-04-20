@@ -1,10 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Description from "../components/home/description";
-import Jumbotron from "../components/home/jumbotron";
-import Portfolio from "../components/home/portfolio";
-import Navbar from "../components/shared/navbar";
+import Description from "../components/home/Description";
+import Jumbotron from "../components/home/Jumbotron";
+import Portfolio from "../components/home/Portfolio";
+import Navbar from "../components/shared/Navbar";
+import Layout from "../components/shared/Layout";
 
 interface HomePageComponentProps {
   data: any;
@@ -16,12 +17,11 @@ const HomePage = (props: HomePageComponentProps) => {
   } = props;
 
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Jumbotron />
       <Description />
       <Portfolio images={[Map, Plasma, Pres, Zip, Jobs]} />
-    </>
+    </Layout>
   );
 };
 
