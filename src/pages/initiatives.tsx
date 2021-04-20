@@ -1,7 +1,8 @@
 import React from "react";
+import Layout from "../components/shared/Layout";
 
 const InitiativesPage = () => {
-  return <div>Initiatives</div>;
+  return <Layout>Initiatives</Layout>;
 };
 
 export default InitiativesPage;

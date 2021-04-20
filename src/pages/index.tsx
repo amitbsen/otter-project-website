@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import Description from "../components/home/Description";
 import Jumbotron from "../components/home/Jumbotron";
 import Portfolio from "../components/home/Portfolio";
-import Navbar from "../components/shared/Navbar";
 import Layout from "../components/shared/Layout";
 
 interface HomePageComponentProps {
