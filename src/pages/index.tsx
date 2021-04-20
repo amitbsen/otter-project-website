@@ -2,9 +2,10 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Description from "../components/home/Description";
-import Jumbotron from "../components/home/Jumbotron";
+import Jumbotron from "../components/shared/Jumbotron";
 import Portfolio from "../components/home/Portfolio";
 import Layout from "../components/shared/Layout";
+import { Media } from "../types";
 
 interface HomePageComponentProps {
   data: any;
@@ -17,7 +18,14 @@ const HomePage = (props: HomePageComponentProps) => {
 
   return (
     <Layout>
-      <Jumbotron />
+      <Jumbotron
+        mediaType={Media.video}
+        sourceUri={"https://flyzipline.com/assets/video/hero.mp4"}
+        subtitle={
+          "Enabled by the fastest and most experienced drone delivery service"
+        }
+        title={"Vital, On-Demand Delivery for the World"}
+      />
       <Description />
       <Portfolio images={[Map, Plasma, Pres, Zip, Jobs]} />
     </Layout>
