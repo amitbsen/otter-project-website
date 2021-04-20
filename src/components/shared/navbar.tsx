@@ -7,7 +7,9 @@ const Navbar = () => {
 
   return (
     <nav className="container flex justify-between max-w-screen-lg py-3 font-sans px-10">
-      <div className="font-bold text-3xl">zipline</div>
+      <Link to={"/"}>
+        <div className="font-bold text-3xl">zipline</div>
+      </Link>
 
       <div className="pt-2">
         <Link className={linkStyle} to={"/initiatives"}>
