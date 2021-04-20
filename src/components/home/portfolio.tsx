@@ -1,6 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
-import PortfolioItem from "./portfolioItem";
+import PortfolioItem from "./PortfolioItem";
 import { portfolioItemsCopy } from "../../copy/copy";
 
 interface PortfolioComponentProps {
